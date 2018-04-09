@@ -50,6 +50,10 @@ public class EbayProductPurchaseTest {
 
 	@FindBy(xpath = "//UIANavigationBar[2]/UIALabel[@name='PaymentType']")
 	private WebElement paymentTypeLbl;
+	
+	@FindBy(xpath = "//UIANavigationBar[2]/UIAButton[@name='Submit']")
+	private WebElement submitBtn;
+
  /********************************************************************
  * Function Name: EbayProductPurchaseTest
  * Generated : 07 April 2018
@@ -286,10 +290,29 @@ public class EbayProductPurchaseTest {
 		return status;
 
 	}
-
+/********************************************************************
+ * Function Name: tapSubmit
+ * Generated : 07 April 2018
+ * Description: This method selects Submit button, returns true if successfully selected and false if not.
+ * Return type : boolean
+ * Author : Priyanka
+ *******************************************************************/
+	
 	public boolean tapSubmit() {
 		// TODO Auto-generated method stub
-		return false;
+		boolean status = false;
+		
+		try {
+
+			submitBtn.click();
+
+			status = true;
+		} catch (Exception e) {
+			status = false;
+			e.printStackTrace();
+		}
+		return status;
+		
 	}
 
 }
