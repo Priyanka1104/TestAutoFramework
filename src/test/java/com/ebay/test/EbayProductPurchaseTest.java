@@ -50,7 +50,14 @@ public class EbayProductPurchaseTest {
 
 	@FindBy(xpath = "//UIANavigationBar[2]/UIALabel[@name='PaymentType']")
 	private WebElement paymentTypeLbl;
-
+ /********************************************************************
+ * Function Name: EbayProductPurchaseTest
+ * Generated : 07 April 2018
+ * Description: This is a constructor that initialises Page Factory elements with Webdriver instance and Class name. 
+ * Return type : NA
+ * Author : Priyanka
+ *******************************************************************/
+ 
 	public EbayProductPurchaseTest(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
