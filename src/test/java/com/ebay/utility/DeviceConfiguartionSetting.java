@@ -5,9 +5,22 @@ import java.io.File;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.remote.MobileCapabilityType;
-
+/********************************************************************
+ * Class Name: DeviceConfiguartionSetting
+ * Generated : 07 April 2018
+ * Description: This class holds methods for device configuration settings
+ * Author : Priyanka
+ *******************************************************************/
 public class DeviceConfiguartionSetting {
-
+	
+ /********************************************************************
+ * Function Name: getSimulatorCapabilities
+ * Generated : 07 April 2018
+ * Description: This method is used to set desired capabilities for Simulator
+ * Return type : DesiredCapabilities
+ * Author : Priyanka
+ *******************************************************************/
+	
 	public DesiredCapabilities getSimulatorCapabilities() {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -26,6 +39,14 @@ public class DeviceConfiguartionSetting {
 		return capabilities;
 	}
 
+ /********************************************************************
+ * Function Name: getRealDeviceCapabilities
+ * Generated : 07 April 2018
+ * Description: This method is used to set desired capabilities for Real device
+ * Return type : DesiredCapabilities
+ * Author : Priyanka
+ *******************************************************************/
+	
 	public DesiredCapabilities getRealDeviceCapabilities() {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
