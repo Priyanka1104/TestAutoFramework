@@ -24,9 +24,12 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
-/**
- * Created by Priyanka
- */
+/********************************************************************
+ * Class Name: AppiumDriverLibraryImpl
+ * Generated : 07 April 2018
+ * Description: This class holds the various functions to initialise the reporting parameters and launch the appium webdriver server
+ * Author : Priyanka
+ *******************************************************************/
 public class AppiumDriverLibraryImpl {
 
 	protected static WebDriver driver;
@@ -38,6 +41,14 @@ public class AppiumDriverLibraryImpl {
 	static String driverPath = System.getProperty("user.dir") + "\\src\\Jars\\";
 	static String reportPath = System.getProperty("user.dir") + "\\output\\";
 
+/********************************************************************
+ * Constructor Name: AppiumDriverLibraryImpl
+ * Generated : 07 April 2018
+ * Description: This constructor invokes initialise() method
+ * Author : Priyanka
+ *******************************************************************/
+	
+	
 	public AppiumDriverLibraryImpl() {
 		initialize();
 	}
@@ -47,6 +58,14 @@ public class AppiumDriverLibraryImpl {
 			createNewDriverInstance();
 	}
 
+ /********************************************************************
+ * Function Name: createNewDriverInstance
+ * Generated : 07 April 2018
+ * Description: This method is used to create new driver instance depending upon the browser value
+ * Return type : void
+ * Author : Priyanka
+ *******************************************************************/	
+	
 	private void createNewDriverInstance() {
 		String browser = new PropertyReader().readProperty("browser");
 		String testDevice = new PropertyReader().readProperty("testDevice");
@@ -168,21 +187,7 @@ public class AppiumDriverLibraryImpl {
 		iOSdriver = null;
 	}
 
-	public boolean isAlertPresent() {
-		try {
-			driver.switchTo().alert();
-			return true;
-		} // try
-		catch (NoAlertPresentException Ex) {
-			return false;
-		} // catch
-	} //
+	
 
-	public int randInt(int min, int max) {
-
-		// nextInt is normally exclusive of the top value,
-		// so add 1 to make it inclusive
-		int randomNum = ThreadLocalRandom.current().nextInt(min, max + 1);
-		return randomNum;
-	}
+	
 }
