@@ -8,9 +8,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Created by Priyanka .
- */
+/********************************************************************
+ * Class Name: EbayProductPurchaseTest
+ * Generated : 07 April 2018
+ * Description: This is POM class that holds locators and methods on locators.
+ * Author : Priyanka
+ *******************************************************************/
 public class EbayProductPurchaseTest {
 
 	WebDriver driver;
@@ -52,7 +55,14 @@ public class EbayProductPurchaseTest {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
+ /********************************************************************
+ * Function Name: verifyEbayLandingPage
+ * Generated : 07 April 2018
+ * Description: This method verifies that user is on eBay home page, returns true if user is on eBay home page and false if validation fails.
+ * Return type : boolean
+ * Author : Priyanka
+ *******************************************************************/
+ 
 	public boolean verifyEbayLandingPage() throws InterruptedException {
 		boolean status = false;
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -70,7 +80,13 @@ public class EbayProductPurchaseTest {
 		return status;
 
 	}
-
+/********************************************************************
+ * Function Name: selectSignInBtn
+ * Generated : 07 April 2018
+ * Description: This method selects Sign In button, returns true if user clicks on Sign In button and false if not.
+ * Return type : boolean
+ * Author : Priyanka
+ *******************************************************************/
 	public boolean selectSignInBtn() throws InterruptedException {
 		boolean status = false;
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -88,7 +104,13 @@ public class EbayProductPurchaseTest {
 		return status;
 
 	}
-
+/********************************************************************
+ * Function Name: enterUserPassword
+ * Generated : 07 April 2018
+ * Description: This method enters user name and Password on Sign In page, returns true if success and false if not.
+ * Return type : boolean
+ * Author : Priyanka
+ *******************************************************************/
 	public boolean enterUserPassword(String userName, String password) throws InterruptedException {
 		boolean status = false;
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -106,7 +128,13 @@ public class EbayProductPurchaseTest {
 		return status;
 
 	}
-
+/********************************************************************
+ * Function Name: tapSignIn
+ * Generated : 07 April 2018
+ * Description: This method taps on Sign In button, returns true if successfully selected and false if not.
+ * Return type : boolean
+ * Author : Priyanka
+ *******************************************************************/
 	public boolean tapSignIn() throws InterruptedException {
 		boolean status = false;
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -124,7 +152,13 @@ public class EbayProductPurchaseTest {
 		return status;
 
 	}
-
+/********************************************************************
+ * Function Name: enterProductSearch
+ * Generated : 07 April 2018
+ * Description: This method enters product name in product search text box, returns true if successfully entered and false if not.
+ * Return type : boolean
+ * Author : Priyanka
+ *******************************************************************/
 	public boolean enterProductSearch(String product) throws InterruptedException {
 		boolean status = false;
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -160,7 +194,13 @@ public class EbayProductPurchaseTest {
 		return status;
 
 	}
-
+/********************************************************************
+ * Function Name: selectBuyItBtn
+ * Generated : 07 April 2018
+ * Description: This method selects Buy It button, returns true if successfully selected and false if not.
+ * Return type : boolean
+ * Author : Priyanka
+ *******************************************************************/
 	public boolean selectBuyItBtn() throws InterruptedException {
 		boolean status = false;
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -195,7 +235,13 @@ public class EbayProductPurchaseTest {
 		return status;
 
 	}
-
+/********************************************************************
+ * Function Name: selectProceedToPay
+ * Generated : 07 April 2018
+ * Description: This method selects proceed to Pay button, returns true if successfully selected and false if not.
+ * Return type : boolean
+ * Author : Priyanka
+ *******************************************************************/
 	public boolean selectProceedToPay() throws InterruptedException {
 		boolean status = false;
 		
@@ -211,7 +257,13 @@ public class EbayProductPurchaseTest {
 		return status;
 
 	}
-
+/********************************************************************
+ * Function Name: verifyPaymentPage
+ * Generated : 07 April 2018
+ * Description: This method verifies that user is on Payment page, returns true if successfully navigated and false if not.
+ * Return type : boolean
+ * Author : Priyanka
+ *******************************************************************/
 	public boolean verifyPaymentPage() throws InterruptedException {
 		boolean status = false;
 		
